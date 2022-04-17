@@ -1,0 +1,39 @@
+.body{
+    margin-left: 100px;
+    margin-right: 100px;
+ }
+ .login-form{
+     background-color: rgba(158, 151, 151, 0.918);
+     padding-left: 20px;
+     padding-bottom: 20px;
+     border-radius: 3px;
+     width: 50%;
+     margin: 0px 0px 0px auto ; 
+ }
+ #email-form{
+     height: 35px;
+     width: 300px;
+     margin-bottom: 10px;
+     border-radius: 3px;
+     border: 1px solid gainsboro;
+    
+ }
+ #password-form{
+     height: 35px;
+     width: 300px;
+     margin-bottom: 10px;
+     border-radius: 3px;
+     border: 1px solid gainsboro;
+ }
+ .button-form{
+     height: 35px;
+     width: 308px;
+     cursor: pointer;
+     border: 1px solid gainsboro;
+     background-color: #134949;
+     
+ }
+ .account-color{
+     color: bisque;
+     text-decoration: none;
+ }

@@ -1,8 +1,14 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import useService from '../../Hooks/useService';
+import './Home.css';
 const Home = () => {
+    const [service,setService]=useService();
+    console.log(service);
     return (
         <div>
+            {/* -------------carousel------------ */}
+
           <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -24,6 +30,26 @@ const Home = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
+
+<h2 className='title'>Creative Palash Photography</h2>
+        {/* --------card home page---------- */}
+
+        <div className='card-design'>
+            
+       { 
+       service.map(service1=><div class="card" style={{width: "18rem;"}}>
+  <img src={service1.img} className="card-img-top img-size" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Service Name: <span style={{color:'#00008B'}}>{service1.name}</span></h5>
+    <h5 className="card-title">Price: <span style={{color:'red'}}>{service1.price}</span></h5>
+    <p className="card-text">{service1.service}</p>
+    <Link to="/checkout" class="btn btn-primary">Check Out</Link>
+  </div>
+  </div>)
+
+    }
+    </div>
+
         </div>
     );
 };

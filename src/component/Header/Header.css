@@ -1,0 +1,10 @@
+.sign-out{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+ ul> li:focus{
+ color: black;
+}
