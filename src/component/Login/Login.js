@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import google from '../images/google.png';
+import Loading from '../Shered/Loading/Loading';
 import './Login.css'
 const Login = () => {
 //google sign in
@@ -29,6 +30,10 @@ const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
    const onBlurPassword=(event)=>{
     setPassword(event.target.value);
    }
+
+   if (loading || loading1) {
+    return <Loading></Loading>
+}
 
    let errorShow;
 

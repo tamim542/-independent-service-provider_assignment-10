@@ -33,7 +33,7 @@ const Header = () => {
         <li className="nav-item">
             
              { 
-             user?<p className="nav-link text-light sign-out" onClick={handleSignOut}>signout</p>:<Link className="nav-link text-light" to="/login">Login</Link>
+             user?<p className="nav-link text-light sign-out" onClick={handleSignOut}>Signout</p>:<Link className="nav-link text-light" to="/login">Login</Link>
              }
             
           
