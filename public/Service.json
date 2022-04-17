@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Photo editing, color correction and retouching",
+        "img": "https://i.ibb.co/7rSgwS5/woman-retoucher-looking-camera-smiling-sitting-creative-media-agency-retouching-client-photos-pc-wit.webp",
+        "price": "3000 BDT",
+        "service":"Color correction is the act of “fixing” or repairing the damage or unwanted results during chemical hair color processing. Color correction may not be something your client thinks they need until the appointment they scheduled with you at the salon."
+        
+    },
+    {
+        "name": "Event photography",
+        "img": "https://i.ibb.co/r39gqzb/couple-dancing-ther-wedding-1157-93.webp",
+        "price": "15000 BDT",
+        "service":"Professional event photography can capture candid shots of guests having a great time, group portraits, all the hard work that went into setting the event up, and everything in between."
+        
+    },
+    {
+        "name": "Social media photography",
+        "img": "https://i.ibb.co/cxQkJfk/instagram-story-templates-world-photography-day-83728-3606.webp",
+        "price": "5000 BDT",
+        "service":"Social media photography is simply exchanging one marginalised audience for another. The benefit is that neither method must be exclusive; social media can draw more viewers to galleries and exhibitions, and those who can't go in person at least have the opportunity to view the work online"
+       
+    },
+    {
+        "name": "Lifestyle photography",
+        "img": "https://i.ibb.co/3NJnjr8/girl-with-old-camera-1150-142.webp",
+        "price": "1000 BDT",
+        "service":"Lifestyle photography is a style of portrait photography that aims to capture real-life situations in an artistic manner. The purpose of this type of photography is to share people’s stories through candid, unstaged scenes."
+        
+    },
+    {
+        "name": "Location and architectural photography",
+        "img": "https://i.ibb.co/tJ062RD/aerial-photography-villa-complex-luxury-resort-1205-9753.jpg",
+        "price": "4000 BDT",
+        "service":"Architectural photography is the sub genre of the photography discipline where the primary emphasis is made to capturing photographs of buildings and similar architectural structures that are both aesthetically pleasing and accurate in terms of representations of their subjects."
+       
+    },
+    {
+        "name": "Photo metadata to SEO best practices",
+        "img": "https://i.ibb.co/BgRKTCR/happy-asian-woman-vacation-photographing-with-camera-beach-with-horizon-background-1253-1357.webp",
+        "price": "18000 BDT",
+        "service":"If your page speed is already running slow and you have a lot of images, it's a good idea to just get rid of it. But if you think it could be good for local SEO or your site has no speed issues, metadata may help you."
+       
+    },
+    {
+        "name": "Photo library hosting",
+        "img": "https://i.ibb.co/hCZvHx6/bookshelf-books-education-knowledge-study-53876-163298.webp",
+        "price": "1300 BDT",
+        "service":"An image hosting service allows individuals to upload images to an Internet website. The image host will then store the image onto its server, and show the individual different types of code to allow others to view that image."
+        
+    },
+    {
+        "name": "Product photography",
+        "img": "https://i.ibb.co/GQMQbB3/luxury-3d-product-display-psd-with-podium-neon-rings-53876-123569.webp",
+        "price": "2200 BDT",
+        "service":"Product photography, or e-commerce photography as it's sometimes known, is basically what it sounds like: photos taken and used on websites and social media platforms to help drive sales of your product or service."
+        
+    },
+    {
+        "name": "Food photography",
+        "img": "https://i.ibb.co/1GqPwDf/top-view-food-frame-with-copy-space-23-2148723447.jpg",
+        "price": "2300 BDT",
+        "service":"Food photography is a still life photography genre used to create attractive still life photographs of food. It is a specialization of commercial photography, the products of which are used in advertisements, magazines, packaging, menus or cookbooks."
+       
+    }
+    
+]
