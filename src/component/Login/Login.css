@@ -37,3 +37,8 @@
      color: bisque;
      text-decoration: none;
  }
+ .reset-password{
+    color: #247bdd;
+    text-decoration: none;
+    cursor: pointer;
+ }

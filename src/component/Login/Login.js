@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+//import { sendPasswordResetEmail } from 'firebase/auth';
+import React, { useRef, useState } from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import google from '../images/google.png';
@@ -10,7 +11,8 @@ const Login = () => {
 const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
 
 //
-
+   const emailRef = useRef('');
+   // const passwordRef = useRef('');
     const [email, setEmail]=useState('');
     const [password, setPassword]=useState('');
 
@@ -20,6 +22,9 @@ const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+
+      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
       const location = useLocation();
       const from = location.state?.from?.pathname || '/';
 
@@ -48,6 +53,20 @@ const signInwithform=(event)=>{
     event.preventDefault();
     signInWithEmailAndPassword(email, password);
 }
+
+// reset password
+const resetPassword = async () => {
+    const email =emailRef.current.value;
+    if (email) {
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
+        console.log('abc correct');
+    }
+    else{
+        //toast('please enter your email address');
+        console.log('wrong hi');
+    }
+}
     return (
         <div className='body'>
             <div className='login-form'>
@@ -56,7 +75,7 @@ const signInwithform=(event)=>{
                 <h1>Login</h1>
                 <span>Email</span>
                 <br/>
-                <input onBlur={onBlurEmail} type="email" name='' id='email-form' required/>
+                <input onBlur={onBlurEmail} ref={emailRef} type="email" name='' id='email-form' required/>
                 <br/>
                 
                 <span>password</span>
@@ -69,6 +88,7 @@ const signInwithform=(event)=>{
                 <br/>
             </form>
             <p>New to Creative Photographer?<Link className='account-color' to="/signup">create an account</Link></p>
+            <p>Forget Password? <span className='reset-password' onClick={resetPassword}>Reset Password</span> </p>
             </div>
 
             <div>
