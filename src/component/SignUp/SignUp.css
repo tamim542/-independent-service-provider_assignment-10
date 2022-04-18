@@ -2,13 +2,19 @@
     margin-left: 100px;
     margin-right: 100px;
  }
+ .signup-center{
+     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ }
  .login-form{
-     background-color: rgba(158, 151, 151, 0.918);
+    /* background-color: rgba(158, 151, 151, 0.918); */
      padding-left: 20px;
      padding-bottom: 20px;
      border-radius: 3px;
      width: 50%;
-     margin: 0px 0px 0px auto ; 
+    
+     
  }
  #email-form{
      height: 35px;
@@ -33,8 +39,9 @@
      border: 1px solid gainsboro;
      background-color: #134949;
      
+     
  }
  .account-color{
-     color: bisque;
+     color: #d1330c;
      text-decoration: none;
  }

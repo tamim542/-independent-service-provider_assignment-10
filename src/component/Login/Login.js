@@ -72,6 +72,7 @@ const resetPassword = async () => {
 }
     return (
         <div className='body'>
+            <div className='take-center'>
             <div className='login-form'>
                 <h3>{errorShow}</h3>
             <form className='form-control' onSubmit={signInwithform}>
@@ -87,14 +88,23 @@ const resetPassword = async () => {
                 <input onBlur={onBlurPassword} type="password" name='' id='password-form' required/>
                 <br/>
                 <br/>
-                <button className='button-form'>Login</button>
+                <button className='button-form'><span style={{color:'white'}}>Login</span></button>
                 <br/>
             </form>
             <p>New to Creative Photographer?<Link className='account-color' to="/signup">create an account</Link></p>
             <p>Forget Password? <span className='reset-password' onClick={resetPassword}>Reset Password</span> </p>
             </div>
 
+           
+           
+            </div>
+            <div className='d-flex align-items-center'>
+            <div style={{ height: '1px' }} className='bg-primary div-width1'></div>
+                <p className='mt-2 px-2'>or</p>
+                <div style={{ height: '1px' }} className='bg-primary div-width2'></div>
+                </div>   
             <div>
+               
             <button
                     onClick={() => signInWithGoogle()}
                     className='btn btn-primary w-50 d-block mx-auto my-2'>

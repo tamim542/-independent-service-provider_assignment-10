@@ -39,6 +39,7 @@ const SignUp = () => {
    
     return (
         <div className='body'>
+            <div className='signup-center'>
             <div className='login-form'>
             <form className='form-control' onSubmit={onSubmitForm}>
                 <h3>{error}</h3>
@@ -59,10 +60,11 @@ const SignUp = () => {
                 <input onBlur={onBlurConfirmPassword} type="password" name='confirm-password' id='password-form' required/>
                 <br/>
                 <br/>
-                <button className='button-form'>Sign Up</button>
+                <button className='button-form'><span style={{color:'white'}}>Sign Up</span></button>
                 <br/>
             </form>
             <p>Have an already account?<Link className='account-color' to="/login"> Login</Link></p>
+            </div>
             </div>
         </div>
     );

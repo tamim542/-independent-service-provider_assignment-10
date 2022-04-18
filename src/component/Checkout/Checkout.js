@@ -1,25 +1,29 @@
 import React from 'react';
+
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Checkout.css';
 const Checkout = () => {
 
-    let message;
+    
+    
     const handleSubmit=()=>{
+      
+        
+      
         toast('Thanks for Booking');
+   
     }
 
-    const onSubmitForm=(event)=>{
-        event.preventDefault();
-    }
 
     return (
         <div>
             
             <div className='body'>
+                <div className='checkout-center'>
             <div className='login-form'>
-            <form className='form-control' onSubmit={onSubmitForm}>
-                <h3>{message}</h3>
+            <form className='form-control' >
+               
                 <h1>Form</h1>
                 <span>Email</span>
                 <br/>
@@ -37,11 +41,12 @@ const Checkout = () => {
                 <input  type="text" name='phone' id='password-form' required/>
                 <br/>
                 <br/>
-                <button className='button-form' onClick={handleSubmit}>Submit</button>
+                <button className='button-form' onClick={handleSubmit}><span style={{color:'white'}}>Submit</span></button>
                 <br/>
             </form>
             
             </div>
+        </div>
         </div>
         <ToastContainer/>
         </div>
