@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Creative Palash Photography
+
+- was used a Protected Route for checkOut page
+- Email Verification and Reset Password 
+- For SignIn Provide two Method
+- Responsive Mobile and Desktop for Home page
+- For Authentication used Google Firebase and React Firebase Hooks  
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,7 +15,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [Live Site Link](https://regal-moxie-a06e7c.netlify.app/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -68,3 +74,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Technology used for this project
+
+- Google FireBase, React Firebase Hooks
+- React Router, Protected Route
+- Bootstrap, React Bootstrap 
+- React Toast
