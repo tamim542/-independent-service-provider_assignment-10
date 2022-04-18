@@ -5,6 +5,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import google from '../images/google.png';
 import Loading from '../Shered/Loading/Loading';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 const Login = () => {
 //google sign in
@@ -59,7 +62,7 @@ const resetPassword = async () => {
     const email =emailRef.current.value;
     if (email) {
         await sendPasswordResetEmail(email);
-        alert('Sent email');
+        toast('Sent email');
         console.log('abc correct');
     }
     else{
@@ -99,6 +102,7 @@ const resetPassword = async () => {
                     <span className='px-2'>Google Sign In</span>
                 </button>
             </div>
+            <ToastContainer />
         </div>
     );
 };
