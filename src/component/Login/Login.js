@@ -63,7 +63,7 @@ const resetPassword = async () => {
     if (email) {
         await sendPasswordResetEmail(email);
         toast('Sent email');
-        console.log('abc correct');
+        
     }
     else{
         //toast('please enter your email address');

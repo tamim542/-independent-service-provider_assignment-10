@@ -1,0 +1,24 @@
+.about-me{
+    margin-left: 200px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme-description{
+    margin-top: 100px;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.img-div{
+   margin-top: 100px;
+    width: 50%;
+}
+.img-resize{
+    border-radius: 3px;
+    width: 60%;
+}
+.heading{
+    font-weight: bold;
+}
