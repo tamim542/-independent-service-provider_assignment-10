@@ -1,4 +1,4 @@
-# Creative Palash Photography
+# Creative Wedding Palash Photography
 
 - was used a Protected Route for checkOut page
 - Email Verification and Reset Password 
