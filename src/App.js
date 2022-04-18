@@ -11,6 +11,7 @@ import SignUp from './component/SignUp/SignUp';
 import RequireAuth from './component/RequireAuth/RequireAuth';
 import Checkout from './component/Checkout/Checkout';
 import Footer from './component/Footer/Footer';
+import Services from './component/Services/Services';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Header></Header>
     <Routes>
       <Route path='/home' element={<Home></Home>}></Route>
+      <Route path='/services' element={<Services></Services>}></Route>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/about' element={<About></About>}></Route>
       <Route path='/blog' element={<Blog></Blog>}></Route>
